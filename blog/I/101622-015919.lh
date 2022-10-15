@@ -1,0 +1,79 @@
+Alternative social media front-ends, webapps, browsers, applications, OSes and more...
+
+<h3>Website front-ends that care about your privacy.</h3>
+
+NOTICE: some of front-end links is a public online instance.
+
+<ul>
+    <li>Search Engine: <a href="https://librex.beparanoid.de/">LibreX</a></li>
+    <li>Search Engine: <a href="https://searx.space/">SearX/NG</a></li>
+    <li>Twitter: <a href="https://nitter.net">Nitter</a></li>
+    <li>Reddit: <a href="https://libreddit.nl/">Libreddit</a></li>
+    <li>Youtube: <a href="https://invidio.us/">Invidious</a></li>
+    <li>Youtube: <a href="https://tube.cadence.moe/">CloudTube</a></li>
+</ul>
+
+<h3>Application front-ends.</h3>
+
+<ul>
+    <li>Twitter: <a href="https://fritter.cc/">Fritter</a></li>
+    <li>Reddit: <a href="https://github.com/Docile-Alligator/Infinity-For-Reddit">Infinity</a></li>
+    <li>Youtube: <a href="https://newpipe.net">NewPipe</a></li>
+    <li>Youtube: <a href="https://github.com/revanced">ReVanced (Youtube Vanced revived, still in alpha)</a></li>
+</ul>
+
+<h3>Browsers</h3>
+
+Android
+
+<ul>
+    <li><a href="https://bromite.org/">Bromite (Fork of Chromium with better privacy)</a></li>
+    <li><a href="https://f-droid.org/en/packages/us.spotco.fennec_dos/">Mull (Fork of fennec)</a></li>
+</ul>
+
+Windows/Linux/BSD
+
+<ul>
+    <li><a href="https://www.mozilla.org/th/">Firefox</a></li>
+    <li><a href="https://github.com/arkenfox/user.js/wiki">Arkenfox's hardening Firefox wiki</a></li>
+    <li><a href="https://ffprofile.com/">Firefox Profilemaker</a></li>
+    <li><a href="https://librewolf.net/">Librewolf</a></li>
+    <li><a href="https://ungoogled-software.github.io/">Ungoogle Chromium</a></li>
+    <li><a href="https://qutebrowser.org/">Qutebrowser</a></li>
+    <li><a href="https://palemoon.org/">Palemoon</a></li>
+    <li><a href="https://seamonkey-project.org/">Seamonkey</a></li>
+    <li><a href="https://lynx.invisible-island.net/">Lynx (command-line)</a></li>
+    <li><a href="http://links.twibright.com/">Links (command-line) (HTTP LINK NO SSL)</a></li>
+</ul>
+
+<h3>OSes and derivatives</h3>
+
+Linux
+
+<ul>
+    <li><a href="https://qubes-os.org/">Qubes OS (focused on security and virtualization)</a></li>
+    <li><a href="https://nobaraproject.org/">Nobara (Based on Fedora, focused on gaming and high-end desktop)</a></li>
+    <li><a href="https://mxlinux.org/">MX Linux</a></li>
+    <li><a href="https://antixlinux.com/">AntiX</a></li>
+    <li><a href="https://devuan.org/">Devuan (Fork of Devuan with init freedom)</a></li>
+    <li><a href="http://slackware.com/">Slackware (HTTP LINK NO SSL)</a></li>
+    <li><a href="https://crux.nu/">CRUX Linux (This is what I'm using right now)</a></li>
+    <li><a href="https://kisscommunity.bvnf.space/">KISS Linux (Community)</a></li>
+</ul>
+
+BSD
+
+<ul>
+    <li><a href="https://ghostbsd.org/">GhostBSD</a></li>
+    <li><a href="https://freebsd.org/">FreeBSD</a></li>
+    <li><a href="https://netbsd.org/">NetBSD</a></li>
+    <li><a href="https://openbsd.org/">OpenBSD</a></li>
+    <li><a href="https://dragonflybsd.org/">DragonFlyBSD</a></li>
+    <li><a href="https://midnightbsd.org/">MidnightBSD</a></li>
+</ul>
+
+XNU
+
+<ul>
+    <li><a href="https://dortania.github.io/OpenCore-Install-Guide/">Dortania's OpenCore Install Guide (Hackintosh)</a></li>
+</ul>
