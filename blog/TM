@@ -10,6 +10,7 @@ $(q "${N%.*}" = index&&(e '<ul>'
 for p in I/*;do q $p = $F&&continue;n="${p#I/}"
 e "<li><a href='${n%.*}.html'>$(sed 1q $p)</a></li>"
 done;e '</ul>')||(e '<a id=toc href=index.html>return</a>'))
+<img id="oc" src="S/cf.png">
 <p id=ft>♡ 2020-2022 by <a href="https://github.com/emelhnn">emelhnn</a>, powered by <a href="https://git.sr.ht/~acdw/unk" title="POSIX!">unk</a></p>
 <p id=ft>Updated on $(date)</p>
 

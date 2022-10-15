@@ -22,3 +22,9 @@ a:hover{
 pre{
     background-color: black;
 }
+
+#oc{
+   position: fixed;
+   bottom: 1px;
+   right: 5%;
+}
