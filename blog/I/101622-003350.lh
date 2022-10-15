@@ -1,0 +1,124 @@
+Hiding files inside picture on Linux
+
+Hiding your files inside picture is very old school.
+
+Using zip/7zip/tar etc.. to compress files, can be one or two files
+
+and then combine again with a picture. (PNG/JPEG/BMP/etc.)
+
+Example: Hiding plain text file "database.txt".
+
+<pre>
+database.txt
+emel@paradox=> zip a.zip database.txt
+  adding: database.txt (stored 0%)
+emel@paradox=>
+</pre>
+
+(!) If you want to secure your compressed file, for zip use "-e"
+<pre>zip -e a.zip database.txt</pre>
+
+Now we have a.zip
+
+<pre>
+emel@paradox=> ls
+a.zip  database.txt
+</pre>
+
+a.zip contain database.txt
+
+<pre>
+emel@paradox=> unzip -l a.zip
+Archive:  a.zip
+  Length      Date    Time    Name
+---------  ---------- -----   ----
+       12  10-16-2022 00:47   database.txt
+---------                     -------
+       12                     1 file
+</pre>
+
+We have a picture in our current directory, the picture can be PNG, JPG, BMP, WEBP.
+
+<pre>
+emel@paradox=> ls
+a.zip  database.txt  rei.jpg
+</pre>
+
+Combine a picture and compressed file together is very easy on Linux, just use cat command.
+
+(!) Remember, image file must come first in the front of zip file when using cat command.
+
+<pre>
+emel@paradox=> cat rei.jpg a.zip > rei_cute.jpg
+emel@paradox=> ls
+a.zip  database.txt  rei.jpg  rei_cute.jpg
+</pre>
+
+Checking filetype.
+
+rei.jpg doesn't contain any files,
+rei_cute.jpg contain one file "database.txt".
+
+<pre>
+emel@paradox=> file rei_cute.jpg
+rei_cute.jpg: JPEG image data, JFIF standard 1.01, aspect ratio, density 1x1, segment length 16, baseline, 
+precision 8, 500x500, components 3
+emel@paradox=> file rei.jpg
+rei.jpg: JPEG image data, JFIF standard 1.01, aspect ratio, density 1x1, segment length 16, baseline, precision 8, 
+500x500, components 3
+</pre>
+
+Filesize.
+
+<pre>
+emel@paradox=> ls -la
+total 176
+drwxr-xr-x  2 emel emel  4096 Oct 16 01:07 .
+drwxr-xr-x 29 emel emel  4096 Oct 16 00:46 ..
+-rw-r--r--  1 emel emel   214 Oct 16 00:59 a.zip
+-rw-r--r--  1 emel emel    12 Oct 16 00:47 database.txt
+-rw-r--r--  1 emel emel 81395 Oct 16 01:05 rei.jpg
+-rw-r--r--  1 emel emel 81609 Oct 16 01:07 rei_cute.jpg
+</pre>
+
+List files in rei_cute.jpg
+
+<pre>
+emel@paradox=> unzip -l rei_cute.jpg
+Archive:  rei_cute.jpg
+warning [rei_cute.jpg]:  81395 extra bytes at beginning or within zipfile
+  (attempting to process anyway)
+  Length      Date    Time    Name
+---------  ---------- -----   ----
+       12  10-16-2022 00:47   database.txt
+---------                     -------
+       12                     1 file
+</pre>
+
+Extracting file from rei_cute.jpg like normal zip file.
+
+(!) If you encrypted zip file, It will prompt you to input password to extract
+just like normal zip file.
+
+<pre>
+emel@paradox=> unzip rei_cute.jpg
+Archive:  rei_cute.jpg
+warning [rei_cute.jpg]:  81395 extra bytes at beginning or within zipfile
+  (attempting to process anyway)
+[rei_cute.jpg] database.txt password:
+ extracting: database.txt
+emel@paradox=> ls
+a.zip  database.txt  rei.jpg  rei_cute.jpg
+</pre>
+
+I'm apologize if there's misleading or not enough information,
+That's all I know about it.
+
+Thank you for reading.
+
+<img src="S/rei_cute.jpg">
+<br>
+<a href="https://nitter.it/zoolpal">artist: zoolpal</a>
+
+<br>
+<br>
