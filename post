@@ -1,0 +1,10 @@
+#!/bin/sh
+
+printf "new title: "
+read -r TITLE
+
+DATE="$(date +%m%d%y-%H%M%S)"
+FILE="blog/I/$DATE.lh"
+printf "%s\n" "$TITLE" > "$FILE"
+
+${EDITOR:-vi} "$FILE"

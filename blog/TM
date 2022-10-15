@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<meta charset=utf-8>
+<title>$(T|sed 's/<[^>]\+>//g')</title>
+$(q -f S/s.css&&e '<link rel=stylesheet href=S/s.css>'||
+e '<style>body{max-width:70ch;padding:1em;margin:auto}
+#toc{padding:1em;display:block}</style>')
+<h1>$(T)</h1>
+$(B|./lht)
+$(q "${N%.*}" = index&&(e '<ul>'
+for p in I/*;do q $p = $F&&continue;n="${p#I/}"
+e "<li><a href='${n%.*}.html'>$(sed 1q $p)</a></li>"
+done;e '</ul>')||(e '<a id=toc href=index.html>return</a>'))
+<p id=ft>♡ 2022 by <a href="https://github.com/emelhnn">emelhnn</a>, powered by <a href="https://git.sr.ht/~acdw/unk" title="POSIX!">unk</a></p>
+
