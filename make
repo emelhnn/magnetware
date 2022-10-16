@@ -14,3 +14,5 @@
     ./unk
     mv O ../O/blog
 )
+
+cp not_found.html O/
