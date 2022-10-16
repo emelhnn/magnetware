@@ -3,8 +3,12 @@
 printf "new title: "
 read -r TITLE
 
-DATE="$(date +%m%d%y-%H%M%S)"
-FILE="blog/I/$DATE.lh"
-printf "%s\n" "$TITLE" > "$FILE"
+FILEDATE="$(date +%m%d%y-%H%M%S)"
+DATE="Date: $(date +%d/%m/%y) - $(date +%H:%M:%S)"
+FILE="blog/I/$FILEDATE.lh"
+printf "%s\n\n" "$TITLE" > "$FILE"
+printf "%s\n" "$DATE" >> "$FILE"
+
+echo "$FILE"
 
 ${EDITOR:-vi} "$FILE"
