@@ -6,7 +6,7 @@ Using zip/7zip/tar etc.. to compress files, can be one or two files
 
 and then combine again with a picture. (PNG/JPEG/BMP/etc.)
 
-Example: Hiding plain text file "database.txt".
+<h3>Example: Hiding plain text file "database.txt".</h3>
 
 <pre>
 database.txt
@@ -18,14 +18,14 @@ emel@paradox=>
 (!) If you want to secure your compressed file, for zip use "-e"
 <pre>zip -e a.zip database.txt</pre>
 
-Now we have a.zip
+<h4>Now we have a.zip</h4>
 
 <pre>
 emel@paradox=> ls
 a.zip  database.txt
 </pre>
 
-a.zip contain database.txt
+<h4>a.zip contain database.txt</h4>
 
 <pre>
 emel@paradox=> unzip -l a.zip
@@ -37,14 +37,14 @@ Archive:  a.zip
        12                     1 file
 </pre>
 
-We have a picture in our current directory, the picture can be PNG, JPG, BMP, WEBP.
+<h4>We have a picture in our current directory, the picture can be PNG, JPG, BMP, WEBP.</h4>
 
 <pre>
 emel@paradox=> ls
 a.zip  database.txt  rei.jpg
 </pre>
 
-Combine a picture and compressed file together is very easy on Linux, just use cat command.
+<h4>Combine a picture and compressed file together is very easy on Linux, just use cat command.</h4>
 
 (!) Remember, image file must come first in the front of zip file when using cat command.
 
@@ -54,7 +54,7 @@ emel@paradox=> ls
 a.zip  database.txt  rei.jpg  rei_cute.jpg
 </pre>
 
-Checking filetype.
+<h4>Checking filetype.</h4>
 
 rei.jpg doesn't contain any files,
 rei_cute.jpg contain one file "database.txt".
@@ -68,7 +68,7 @@ rei.jpg: JPEG image data, JFIF standard 1.01, aspect ratio, density 1x1, segment
 500x500, components 3
 </pre>
 
-Filesize.
+<h4>Filesize.</h4>
 
 <pre>
 emel@paradox=> ls -la
@@ -81,7 +81,7 @@ drwxr-xr-x 29 emel emel  4096 Oct 16 00:46 ..
 -rw-r--r--  1 emel emel 81609 Oct 16 01:07 rei_cute.jpg
 </pre>
 
-List files in rei_cute.jpg
+<h4>List files in rei_cute.jpg</h4>
 
 <pre>
 emel@paradox=> unzip -l rei_cute.jpg
@@ -95,7 +95,7 @@ warning [rei_cute.jpg]:  81395 extra bytes at beginning or within zipfile
        12                     1 file
 </pre>
 
-Extracting file from rei_cute.jpg like normal zip file.
+<h4>Extracting file from rei_cute.jpg just like normal zip file.</h4>
 
 (!) If you encrypted zip file, It will prompt you to input password to extract
 just like normal zip file.
