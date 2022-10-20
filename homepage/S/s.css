@@ -1,5 +1,9 @@
 body{
-    background-color: #272838;
+    background: url("bg.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     color: #cbd4c2;
     max-width: 70ch;
     padding: 5em;
@@ -21,6 +25,10 @@ a:hover{
     text-decoration: underline;
     color: gray;
     margin-left: 5px;
+}
+
+#weblink{
+    image-rendering: pixelated;
 }
 
 #oc{
