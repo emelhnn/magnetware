@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <meta charset=utf-8>
-<title>$(T|sed 's/<[^>]\+>//g')</title>
+<title>emelnet@$(T|sed 's/<[^>]\+>//g')</title>
 $(q -f S/s.css&&e '<link rel=stylesheet href=S/s.css>'||
 e '<style>body{max-width:70ch;padding:1em;margin:auto}
 #toc{padding:1em;display:block}</style>')
