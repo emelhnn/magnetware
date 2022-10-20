@@ -12,3 +12,7 @@ e "<li><a href='${n%.*}.html'>$(sed 1q $p)</a></li>"
 done;e '</ul>')||(e '<a id=toc href=index.html>return</a>'))
 <img id=oc src=S/cf.png alt=.>
 <p id=ft>♡ 2020-2022 by <a href="https://github.com/emelhnn">emelhnn</a>, powered by <a href="https://git.sr.ht/~acdw/unk" title="POSIX!">unk</a>, compatible with lynx.</p>
+<b>This site is a proud member of the geekring! Check some other geeky websites here!</b><br>
+<a href="http://geekring.net/site/NUMBER/previous">Previous site</a> -- 
+<a href="http://geekring.net/site/NUMBER/random">Random site</a> -- 
+<a href="http://geekring.net/site/NUMBER/next">Next site</a>
