@@ -8,6 +8,8 @@ body{
     max-width: 70ch;
     padding: 5em;
     margin: left;
+    font-family: monospace;
+    font-size: 120%;
 }
 
 h1{
